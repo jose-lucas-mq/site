@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Nexa Extra Light;
+}
+
+a, li, ul, ol {
+    text-decoration: none;
+    list-style: none;
+}
+
+a:visited {
+    color: var(--main-blue);
+  }
+
+body{
+    background-color: var(--main-white);
+    color: var(--black);
+}
+
+@font-face {
+    font-family: Nexa Extra Light;
+    src: url('./../fonts/nexa/Nexa-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: Nexa Heavy ;
+    src: url('./../fonts/nexa/Nexa-Heavy.ttf');
+}
+
+
+:root{
+    --main-blue: #326CE5;
+    --main-white: #ffffff;
+    --black: #000000;
+    --box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--main-white); 
+  }
+
+::-webkit-scrollbar {
+    width: 4px; 
+    height: 4px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-blue); 
+    border-radius: 50px;
+}
+
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.title{
+    font-family: Nexa Heavy;
+    font-size: 1.5em;
+}
+
+/* Intro */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.links {
+    color: var(--main-blue);
+    margin: 1em 0;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+span{
+    font-family: Nexa Heavy;
+    color: var(--main-blue);
+}
+
+.talk-to-me{
+    background-color: var(--main-blue);
+    padding: .8em;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+    box-shadow: var(--box-shadow);
+    cursor: pointer; 
+    transition: all .3s ease;
+}
+
+.talk-to-me:hover{
+    background-color: var(--black);
+    color: var(--main-blue);
+    box-shadow: 0px 4px 8px rgba(50, 108, 229, .6);
+}
+
+.links a img:hover{
+    filter: grayscale(1);
+    transition: all .3s ease;
+}
+
+.talk-to-me a{
+    color: var(--main-white);
+    font-family: Nexa Heavy;
+}
+
+/* About me */
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.about-me .description{
+    font-size: 1em;
+    text-align: justify;
+    margin: 1.5em 0;
+}
+
+.about-me span{
+    font-family: Nexa Extra Light;
+}
+
+/* Projetcs */
+
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.carroussel{
+    margin-top: 1.5em;
+    display: flex;
+    overflow-y: overlay;
+    width: 100%;
+}
+
+.carroussel-item{
+    min-width: 60%;
+    margin-right: 1.5em;
+}
+.carroussel-item .project-banner{
+    width: 100%;
+}
+
+.carroussel-item .project-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carroussel-item .project-name p{
+    font-family: Nexa Heavy;
+}
+
+/* Experiences */
+
+.experiences{
+    padding: 2em;
+}
+
+.banner-nubank, .banner-easynvest{
+    width: 100%;
+    height: 40px;
+    margin: 2em 0;
+    background-image: url('./../img/nubank_building.png');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5em;
+    color: var(--main-white);
+}
+
+.banner-easynvest{
+    background-image: url('./../img/easynvest_building.png');
+}
+
+.banner-nubank p, .banner-easynvest p{
+    font-family: Nexa Heavy;
+    font-size: 1em;
+}
+
+.company .description{
+    font-family: Nexa Extra Light;
+    font-size: 1em;
+    text-align: justify;
+}
