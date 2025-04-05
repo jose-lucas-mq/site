@@ -45,11 +45,11 @@
             </nav>
 
 
-            <dev class="talk-to-me">
-                <a href="#talkToMe">
+            
+                <a href="#talkToMe" class="talk-to-me">
                     Fale comigo
                 </a>
-            </dev>
+            
 
             <img src="./assets/img/astronaut.png" alt="">
 
@@ -238,21 +238,21 @@
         </div>
 
         <div id="talkToMe" class="contact">
-            <form action="#">
+            <form action="javascript: sendToWhatsApp()" id="contact-form">
                 <div class="title">
                     Fale comigo
                 </div>
 
                 <div class="input">
-                    <input type="text" name="name" id="name" placeholder="Como você se chama?">
+                    <input type="text" name="name" id="name" placeholder="Como você se chama?" required>
                 </div>
 
                 <div class="input">
-                    <input type="email" name="email" id="email" placeholder="Qual seu principal e-mail?">
+                    <input type="email" name="email" id="email" placeholder="Qual seu principal e-mail?" required>
                 </div>
 
                 <div class="input">
-                    <input type="text" name="subject" id="subject" placeholder="Sobre o que quer falar?">
+                    <input type="text" name="subject" id="subject" placeholder="Sobre o que quer falar?" required>
                 </div>
 
                 <div class="input">

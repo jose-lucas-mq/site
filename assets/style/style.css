@@ -10,9 +10,9 @@ a, li, ul, ol {
     list-style: none;
 }
 
-a:visited {
+.links:visited {
     color: var(--main-blue);
-  }
+}
 
 body{
     background-color: var(--main-white);
@@ -293,6 +293,8 @@ span{
 
 .contact .talk-to-me{
     margin-top: 1.5em;
+    padding: .8em;
+    font-size: 1.2em;
 }
 
 /* Footer */
