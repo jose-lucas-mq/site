@@ -77,6 +77,21 @@ body{
     width: 100%;
 }
 
+#adjectives{
+    border-right: 2px solid var(--black);
+    white-space: nowrap;
+    animation: border 1s infinite ease-in-out;
+}
+
+@keyframes border {
+    to{
+        border-right:  2px solid var(--main-white);
+    }
+    from{
+        border-right: 2px solid var(--black);
+    }
+}
+
 .links {
     color: var(--main-blue);
     margin: 1em 0;
