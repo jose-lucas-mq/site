@@ -5,7 +5,10 @@
     font-family: Nexa Extra Light;
 }
 
-a, li, ul, ol {
+a,
+li,
+ul,
+ol {
     text-decoration: none;
     list-style: none;
 }
@@ -14,7 +17,7 @@ a, li, ul, ol {
     color: var(--main-blue);
 }
 
-body{
+body {
     background-color: var(--main-white);
     color: var(--black);
     width: 100%;
@@ -26,12 +29,12 @@ body{
 }
 
 @font-face {
-    font-family: Nexa Heavy ;
+    font-family: Nexa Heavy;
     src: url('./../fonts/nexa/Nexa-Heavy.ttf');
 }
 
 
-:root{
+:root {
     --main-blue: #326CE5;
     --main-white: #ffffff;
     --black: #000000;
@@ -39,26 +42,26 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--main-white); 
-  }
+    background: var(--main-white);
+}
 
 ::-webkit-scrollbar {
-    width: 4px; 
+    width: 4px;
     height: 4px;
-  }
-  
+}
+
 ::-webkit-scrollbar-thumb {
-    background-color: var(--main-blue); 
+    background-color: var(--main-blue);
     border-radius: 50px;
 }
 
 
-.container{
+.container {
     max-width: 90%;
     margin: 0 auto;
 }
 
-.title{
+.title {
     font-family: Nexa Heavy;
     font-size: 1.5em;
 }
@@ -73,21 +76,27 @@ body{
     font-size: 1.5em;
 }
 
-.banner img{
+.banner nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner img {
     width: 100%;
 }
 
-#adjectives{
+#adjectives {
     border-right: 2px solid var(--black);
     white-space: nowrap;
     animation: border 1s infinite ease-in-out;
 }
 
 @keyframes border {
-    to{
-        border-right:  2px solid var(--main-white);
+    to {
+        border-right: 2px solid var(--main-white);
     }
-    from{
+
+    from {
         border-right: 2px solid var(--black);
     }
 }
@@ -100,68 +109,68 @@ body{
     justify-content: space-between;
 }
 
-span{
+span {
     font-family: Nexa Heavy;
     color: var(--main-blue);
 }
 
-.talk-to-me{
+.talk-to-me {
     background-color: var(--main-blue);
     padding: .8em;
     text-align: center;
     border-radius: 10px;
     margin-bottom: 1.5em;
     box-shadow: var(--box-shadow);
-    cursor: pointer; 
+    cursor: pointer;
     transition: all .3s ease;
     color: var(--main-white);
     font-family: Nexa Heavy;
 }
 
-.talk-to-me:hover{
+.talk-to-me:hover {
     background-color: var(--black);
     box-shadow: 0px 4px 8px rgba(50, 108, 229, .6);
 }
 
-.links a img:hover{
+.links a img:hover {
     filter: grayscale(1);
     transition: all .3s ease;
 }
 
-.talk-to-me a{
+.talk-to-me a {
     color: var(--main-white);
     font-family: Nexa Heavy;
 }
 
 /* About me */
 
-.about-me{
+.about-me {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 2em;
 }
 
-.about-me .description{
+.about-me .description {
     font-size: 1em;
     text-align: justify;
     margin: 1.5em 0;
 }
 
-.about-me span{
+.about-me span {
     font-family: Nexa Extra Light;
 }
 
 /* Projetcs */
 
-.projects{
+.projects {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0 2em;
 }
 
-.carroussel{
+.carroussel {
     margin-top: 1.5em;
     display: flex;
     width: 100%;
@@ -169,31 +178,34 @@ span{
     overflow-y: hidden;
 }
 
-.carroussel-item{
+.carroussel-item {
     min-width: 60%;
+    cursor: pointer;
     margin-right: 1.5em;
 }
-.carroussel-item .project-banner{
+
+.carroussel-item .project-banner {
     width: 100%;
 }
 
-.carroussel-item .project-name{
+.carroussel-item .project-name {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.carroussel-item .project-name p{
+.carroussel-item .project-name p {
     font-family: Nexa Heavy;
 }
 
 /* Experiences */
 
-.experiences{
+.experiences {
     padding: 2em;
 }
 
-.banner-nubank, .banner-easynvest{
+.banner-nubank,
+.banner-easynvest {
     width: 100%;
     height: 40px;
     margin: 2em 0;
@@ -209,16 +221,17 @@ span{
     color: var(--main-white);
 }
 
-.banner-easynvest{
+.banner-easynvest {
     background-image: url('./../img/easynvest_building.png');
 }
 
-.banner-nubank p, .banner-easynvest p{
+.banner-nubank p,
+.banner-easynvest p {
     font-family: Nexa Heavy;
     font-size: 1em;
 }
 
-.company .description{
+.company .description {
     font-family: Nexa Extra Light;
     font-size: 1em;
     text-align: justify;
@@ -226,28 +239,30 @@ span{
 
 /* Skills */
 
-.all-skills{
+.all-skills {
     padding: 2em;
 }
 
-.skills{
+.skills {
     margin-top: 1.5em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.skills .skill{
+.skills .skill {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 1em 0;
 }
-.skills .skill img{
+
+.skills .skill img {
     width: 50px;
     margin-right: 1em;
 }
-.skills .skill .rectangle{
+
+.skills .skill .rectangle {
     width: 100%;
     height: 15px;
     background-color: var(--black);
@@ -256,42 +271,72 @@ span{
     box-shadow: var(--box-shadow);
 }
 
-.skills .skill .rectangle .percent{
-    height: 100%;
+.skills .skill .rectangle .percent {
     background-color: var(--main-blue);
     border-radius: 20px;
+    height: 100%;
+}
+
+#percent70 {
+    width: 70%;
+}
+
+#percent55 {
+    width: 55%;
+}
+
+#percent78 {
+    width: 78%;
+}
+
+#percent40 {
+    width: 40%;
+}
+
+#percent50 {
+    width: 50%;
+}
+
+#percent45 {
+    width: 45%;
+}
+
+#percent90 {
+    width: 90%;
 }
 
 /* Contact */
 
-.contact{
+.contact {
     padding: 2em;
 }
 
-.contact form{
+.contact form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
 }
 
-.contact form textarea, .contact form input{
+.contact form textarea,
+.contact form input {
     width: 100%;
     outline: none;
     font-family: Nexa Extra Light;
     font-size: 1em;
-    border-bottom: 2px solid var(--black); 
+    border-bottom: 2px solid var(--black);
     width: 100%;
     color: var(--black);
     padding: 1em 0;
     margin: 1em 0;
 }
 
-.contact form input:focus, .contact form textarea:focus{
+.contact form input:focus,
+.contact form textarea:focus {
     border-color: var(--main-blue);
 }
 
-.contact .talk-to-me{
+.contact .talk-to-me {
     margin-top: 1.5em;
     padding: .8em;
     font-size: 1.2em;
@@ -299,10 +344,135 @@ span{
 
 /* Footer */
 
-.footer{
+.footer {
     background-color: var(--black);
     color: var(--main-white);
     text-align: center;
     padding: 1em;
     max-width: 100%;
+}
+
+
+/* breakpoints */
+
+/* tablets */
+@media only screen and (min-width: 768px) {
+    .banner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner nav {
+        width: 45%;
+    }
+
+    .banner .astronaut {
+        width: 50%;
+    }
+
+    .carroussel-item {
+        min-width: 45%;
+    }
+
+    .about-me .links {
+        justify-content: flex-start;
+    }
+
+    .about-me .links a {
+        margin-right: 1.5em;
+
+    }
+
+    .company {
+        width: 45%;
+    }
+
+    .companies {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+/* desktops */
+@media only screen and (min-width: 1024px) {
+    .container{
+        max-width: 75%;
+    }
+
+    .banner .links {
+        justify-content: flex-start;
+    }
+
+    .banner .links a {
+        margin-right: 1.5em;
+
+    }
+
+    .banner nav p{
+        text-align: left;
+    }
+    
+    .carroussel-item {
+        min-width: 35%;
+    }
+
+    .skills {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .skills .skill {
+        height: 500px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .skills .skill .rectangle {
+        height: 80%;
+        width: 15px;
+    }
+
+    .skills .skill .rectangle .percent {
+        width: 100%;
+    }
+
+    #percent70 {
+        height: 70%;
+        width:  100%;
+    }
+
+    #percent55 {
+        height: 55%;
+        width:  100%;
+    }
+
+    #percent78 {
+        height: 78%;
+        width:  100%;
+    }
+
+    #percent40 {
+        height: 40%;
+        width:  100%;
+    }
+
+    #percent50 {
+        height: 50%;
+        width:  100%;
+    }
+
+    #percent45 {
+        height: 45%;
+        width:  100%;
+    }
+
+    #percent90 {
+        height: 90%;
+        width:  100%;
+    }
+
+    
 }
