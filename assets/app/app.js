@@ -70,3 +70,16 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
         });
     });
 });
+
+function switchTheme() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+
+
+   var themeIcon = document.getElementById("theme_icon");
+   if (element.classList.contains("dark-mode")) {
+       themeIcon.src = "./assets/img/light_theme.png";
+   } else {
+       themeIcon.src = "./assets/img/dark_theme.png";
+   }
+}

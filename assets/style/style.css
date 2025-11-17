@@ -38,6 +38,7 @@ body {
     --main-blue: #326CE5;
     --main-white: #ffffff;
     --black: #000000;
+    --dark-bg: #383838;
     --box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
 }
 
@@ -55,6 +56,21 @@ body {
     border-radius: 50px;
 }
 
+.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--main-white);
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.header img {
+    cursor: pointer;
+}
 
 .container {
     max-width: 90%;
@@ -344,6 +360,7 @@ span {
     color: var(--black);
     padding: 1em 0;
     margin: 1em 0;
+    background-color: transparent;
 }
 
 .contact form input:focus,
